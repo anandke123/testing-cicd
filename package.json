@@ -1,0 +1,25 @@
+{
+  "name": "testing-cicd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandke123/testing-cicd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandke123/testing-cicd/issues"
+  },
+  "homepage": "https://github.com/anandke123/testing-cicd#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+"scripts": {
+  "test": "jest"
+}}
