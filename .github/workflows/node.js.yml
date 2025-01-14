@@ -1,0 +1,28 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # The virtual environment
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # Checkout your code from the repository
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Use the version of Node.js you prefer
+
+    - name: Install dependencies
+      run: npm install  # Install the dependencies from package.json
+
+    - name: Run tests
+      run: npm test  # Run the test command you defined earlier
